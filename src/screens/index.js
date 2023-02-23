@@ -1,2 +1,2 @@
-export { default as SLogin } from './SLogin'
 export { default as SWelcome } from './SWelcome'
+export { default as SConfirmPhoneNum } from './SConfirmPhoneNum'
