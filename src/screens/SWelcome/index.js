@@ -31,7 +31,7 @@ const Welcome = () => {
             <Text style={{color: generalColor.error}}>Mật khẩu không hợp lệ!</Text>
           </View>
 
-          <TouchableOpacity style={styles.btnForgotPass} onPress={() => navigation.navigate('SConfirmPhoneNum')}>
+          <TouchableOpacity style={styles.btnForgotPass} onPress={() => navigation.navigate('SForgotPassword')}>
             <Text style={{ color: generalColor.primary }}>Quên mật khẩu?</Text>
           </TouchableOpacity>
           <TouchableOpacity style={generalStyle.button}>

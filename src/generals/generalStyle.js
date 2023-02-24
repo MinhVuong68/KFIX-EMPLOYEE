@@ -12,6 +12,7 @@ const generalStyle = StyleSheet.create({
   },
   button: {
     paddingHorizontal: 8,
+    width: '100%',
     paddingVertical: 16,
     backgroundColor: "green",
     borderRadius: 10,
@@ -27,7 +28,12 @@ const generalStyle = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 10,
     paddingVertical: 30,
+    backgroundColor: generalColor.white
   },
+  containerCenter: {
+    justifyContent: "center",
+    alignItems: 'center'
+  }
 });
 
 export default generalStyle;

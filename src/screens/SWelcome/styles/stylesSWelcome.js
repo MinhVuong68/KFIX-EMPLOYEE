@@ -5,6 +5,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     padding: 15,
+    backgroundColor: generalColor.white
   },
   header: { color: "green", fontSize: 15 },
   txtButton: {
