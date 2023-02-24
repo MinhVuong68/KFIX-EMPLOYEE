@@ -8,6 +8,9 @@ import styles from "./styles/stylesSWelcome";
 
 const Welcome = () => {
   const navigation = useNavigation()
+  const handleLogin = () => {
+    navigation.navigate('MainScreen')
+  }
   return (
     <View style={styles.container}>
       <IntroduceSlider />
@@ -34,7 +37,7 @@ const Welcome = () => {
           <TouchableOpacity style={styles.btnForgotPass} onPress={() => navigation.navigate('SForgotPassword')}>
             <Text style={{ color: generalColor.primary }}>Quên mật khẩu?</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={generalStyle.button}>
+          <TouchableOpacity style={generalStyle.button} onPress={handleLogin}>
             <Text style={styles.txtButton}>Đăng nhập</Text>
           </TouchableOpacity>
         </View>
