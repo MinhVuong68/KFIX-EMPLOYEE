@@ -1,6 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import generalColor from '../../generals/colors'
+import OrderDetail from './OrderDetail'
 
 import SHome from "./SHome"
 import SMe from "./SMe"
@@ -18,6 +19,8 @@ const MainScreen = () => {
             let iconName = "home"
             if(screenName == "Me") {
                 iconName = "user"
+            } else if(screenName == "Order") {
+                iconName = "user"
             }
             return <FontAwesome
                 name={iconName}
@@ -29,6 +32,7 @@ const MainScreen = () => {
     return(
         <Tab.Navigator screenOptions={screenOptions}>
             <Tab.Screen name={"Home"} component={SHome} />
+            <Tab.Screen name={"OrderDetail"} component={OrderDetail} />
             <Tab.Screen name={"Me"} component={SMe} />
         </Tab.Navigator>
     )

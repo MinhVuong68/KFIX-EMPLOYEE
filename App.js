@@ -1,6 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import { MainScreen, OTP,SConfirmPhoneNum, SForgotPassword, SWelcome } from './src/screens';
+import { MainScreen, OTP,SChat,SConfirmPhoneNum, SForgotPassword, SGoogleMap, SOrder, SWelcome } from './src/screens';
+
 
 
 export default function App() {
@@ -17,6 +18,9 @@ export default function App() {
         <Stack.Screen name={'OTP'} component={OTP} />
         <Stack.Screen name={'SForgotPassword'} component={SForgotPassword} />
         <Stack.Screen name={'MainScreen'} component={MainScreen} />
+        <Stack.Screen name={'SOrder'} component={SOrder} />
+        <Stack.Screen name={'SChat'} component={SChat} />
+        <Stack.Screen name={'SGoogleMap'} component={SGoogleMap} />
 
       </Stack.Navigator>
       {/* <StatusBar animated={true} backgroundColor={colors.primaryColor}/> */}

@@ -24,6 +24,9 @@ const generalStyle = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
   },
+  txtName: {
+    fontSize: 25
+  },
   container: {
     flex: 1,
     paddingHorizontal: 10,
@@ -33,6 +36,9 @@ const generalStyle = StyleSheet.create({
   containerCenter: {
     justifyContent: "center",
     alignItems: 'center'
+  },
+  containerRow: {
+    flexDirection: "row"
   }
 });
 
