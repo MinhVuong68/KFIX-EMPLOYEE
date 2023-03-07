@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Switch, Text, View } from "react-native";
+import { Pressable, Switch, Text, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import generalColor from "../../../generals/colors";
 import generalStyle from "../../../generals/generalStyle";
 import styles from "./styles/stylesSHome";
@@ -20,6 +21,17 @@ const SHome = () => {
   return (
     <View style={generalStyle.container}>
         
+      <Pressable style={styles.notification} onPress={() => navigation.navigate('SNotifications')}>
+        <FontAwesome
+           name="bell"
+          size={35}
+          color="#000"
+          style={styles.bellIcon}
+        />
+        <View style={styles.new}>
+          <Text style={styles.textNew}>1</Text>
+        </View>
+      </Pressable>
       <View style={styles.content}>
       <Text style={styles.title}>KFIX</Text>
         <Switch

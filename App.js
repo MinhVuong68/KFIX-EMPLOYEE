@@ -1,6 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { MainScreen, OTP,SChat,SConfirmPhoneNum, SForgotPassword, SGoogleMap, SOrder, SWelcome } from './src/screens';
+import SNotifications from './src/screens/MainScreen/SHome/SNotifications';
 
 
 
@@ -21,6 +22,7 @@ export default function App() {
         <Stack.Screen name={'SOrder'} component={SOrder} />
         <Stack.Screen name={'SChat'} component={SChat} />
         <Stack.Screen name={'SGoogleMap'} component={SGoogleMap} />
+        <Stack.Screen name={'SNotifications'} component={SNotifications} options={{animation:'slide_from_left'}}/>
 
       </Stack.Navigator>
       {/* <StatusBar animated={true} backgroundColor={colors.primaryColor}/> */}
