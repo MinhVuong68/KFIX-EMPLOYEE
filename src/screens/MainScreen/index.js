@@ -19,8 +19,8 @@ const MainScreen = () => {
             let iconName = "home"
             if(screenName == "Me") {
                 iconName = "user"
-            } else if(screenName == "Order") {
-                iconName = "user"
+            } else if(screenName == "OrderDetail") {
+                iconName = "newspaper-o"
             }
             return <FontAwesome
                 name={iconName}

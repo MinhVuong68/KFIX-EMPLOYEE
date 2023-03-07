@@ -39,7 +39,8 @@ const generalStyle = StyleSheet.create({
   },
   containerRow: {
     flexDirection: "row"
-  }
+  },
+  
 });
 
 export default generalStyle;
