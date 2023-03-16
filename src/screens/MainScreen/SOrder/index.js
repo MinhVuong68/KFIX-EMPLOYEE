@@ -44,21 +44,6 @@ const SOrder = ({ received }) => {
   //};
 
   const handleDirect = () => {
-    // const scheme = Platform.select({
-    //   ios: "maps:0,0?q=",
-    //   android: "geo:0,0?q=",
-    // });
-    // const latLng = `${10.85584},${106.63114}`;
-    // const label = "Dai hpc cpmg nghiep";
-    // const url = Platform.select({
-    //   ios: `${scheme}${label}@${latLng}`,
-    //   android: `${scheme}${latLng}(${label})`,
-    // });
-
-    // Linking.openURL(url);
-
-    //openMapDirection();
-
     Linking.openURL(`https://www.google.com/maps/dir/?api=1&destination=${10.82300},${106.68672}`)
   };
   return (
